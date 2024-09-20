@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ViaCepApp.MainPage">
+
+    <StackLayout Padding="20">
+        <Label Text="Consultar CEP"
+               FontSize="32"
+               HorizontalOptions="Center" />
+
+        <Entry x:Name="cepEntry"
+               Placeholder="Digite o CEP"
+               Keyboard="Numeric"
+               MaxLength="8" />
+
+        <Button Text="Consultar"
+                Clicked="OnConsultarClicked" />
+
+        <Label x:Name="resultadoLabel"
+               FontSize="18"
+               TextColor="Black"
+               Padding="10"
+               LineBreakMode="WordWrap" />
+    </StackLayout>
+</ContentPage>
